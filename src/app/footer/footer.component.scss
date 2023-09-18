@@ -1,0 +1,31 @@
+@import '../shared/_common.scss';
+
+.footer{
+  width: 100%;
+  position: relative;
+
+  svg{
+    fill: $grey;
+    z-index: 0;
+  }
+
+  .footerCaption{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    color: $lightGrey;
+    z-index: 1;
+    padding: 2% 3%;
+
+    .siteName{
+      font-weight: $bold;
+    }
+  }
+
+  .copyright{
+    background-color: $grey;
+    padding: 2%;
+    text-align: center;
+    color: $lightGrey;
+  }
+}

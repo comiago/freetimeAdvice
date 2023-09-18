@@ -1,0 +1,51 @@
+@import '../shared/_common.scss';
+
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 3%;
+  color: $grey;
+  transition: linear 0.2s;
+
+  .siteName{
+    font-weight: $bold;
+  }
+
+  .mainMenu{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+ }
+
+  a{
+    color: $grey;
+    transition: linear 0.2s;
+  }
+
+  a:hover{
+    color: $blue;
+  }
+
+  .active{
+    color: $blue;
+    text-decoration: underline;
+  }
+}
+
+.header.scrolled{
+  background-color: $grey;
+  color: $lightGrey;
+
+  a{
+    color: $lightGrey;
+  }
+
+  .active{
+    color: $blue;
+    text-decoration: underline;
+  }
+}
