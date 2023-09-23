@@ -28,6 +28,21 @@
 
   a:hover{
     color: $blue;
+    text-decoration: none;
+  }
+
+  .active{
+    color: $blue;
+    text-decoration: underline;
+  }
+
+}
+
+.header.colorInverted{
+  color: $lightGrey;
+
+  a{
+    color: $lightGrey;
   }
 
   .active{
@@ -38,11 +53,6 @@
 
 .header.scrolled{
   background-color: $grey;
-  color: $lightGrey;
-
-  a{
-    color: $lightGrey;
-  }
 
   .active{
     color: $blue;

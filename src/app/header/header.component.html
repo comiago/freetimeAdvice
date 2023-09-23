@@ -1,8 +1,8 @@
-<header [ngClass]="{'scrolled' : isScrolled}" class="header">
+<header [ngClass]="{'scrolled' : isScrolled, 'colorInverted' : colorInverted}" class="header">
   <h1 class="siteName">{{siteName}}</h1>
   <nav class="mainMenu">
-    <a href="" class="active">Home</a>
+    <a routerLink="/" class="active">Home</a>
     <a href="">Search</a>
-    <a href="">Login</a>
+    <a routerLink="login">Login</a>
   </nav>
 </header>

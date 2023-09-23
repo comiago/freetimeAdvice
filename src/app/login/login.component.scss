@@ -1,0 +1,77 @@
+@import "../shared/common";
+
+.background {
+  position: relative;
+  background-image: url('../../assets/42.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: $lightGrey;
+    padding: 2% 3%;
+    text-align: left;
+    width: 40%;
+
+    h1{
+      font-weight: $bold;
+    }
+
+    .loginForm{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      input{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        border-bottom: solid 3px $lightGrey;
+        font-weight: $light;
+        font-size: 150%;
+        margin: 5% 0;
+        padding: 2% 0;
+        color: $lightGrey;
+      }
+
+      input::placeholder{
+        color: $lightGrey;
+      }
+
+      .loginButton{
+        padding: 2% 0;
+        border-radius: 15px;
+        background-color: transparent;
+        border: solid 3px $lightGrey;
+        color: $lightGrey;
+        width: 40%;
+        margin: 5% 0;
+        transition: linear 0.2s;
+        font-weight: $light;
+        font-size: 120%;
+      }
+
+      .loginButton:hover{
+        background-color: $lightGrey;
+        color: $grey;
+      }
+    }
+  }
+}
+
+.background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $black;
+  opacity: 0.6;
+}
